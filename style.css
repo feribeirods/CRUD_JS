@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+h1 {
+    font-weight: lighter;
+    line-height: 75px;
+    margin-left: 25px;
+}
+
+header {
+    height: 75px;
+    width: 100%;    
+    box-sizing: border-box;
+    background-color: rgba(132, 117, 165, 1);
+    color: rgba(242, 242, 242, 1);
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    width: 300px;
+    height: 50px;
+    background-color: rgba(94, 72, 140, 1);
+    color: rgba(242, 242, 242, 1);
+    text-align: left;
+    font-weight: lighter;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+tr {
+    height: 35px;
+}
+
+td {
+    
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.tr-colored {
+ background-color: rgba(132, 117, 165, 0.5);
+}
+
+table {
+    margin-top: 5%;
+}
+
+.btn-crud {
+    width: 70px;
+    height: 30px;
+    color: rgba(242, 242, 242, 1);   
+    font-size: 16px;    
+    border: 0;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.btn-crud:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.btn-edit {
+    background-color: rgb(0, 160, 13);
+}
+
+.btn-del {
+    background-color: rgb(250, 67, 67);
+}
+
+footer {
+    height: 75px;
+    width: 100%;    
+    box-sizing: border-box;
+    background-color: rgba(132, 117, 165, 1);
+    color: rgba(242, 242, 242, 1);
+    position: fixed;
+    bottom: 0px;    
+}
+
+a {
+    text-decoration: none;
+    color: rgba(242, 242, 242, 1);
+    margin-left: 10px;
+}
+
+a:hover {
+    color: rgba(29, 1, 89, 1);
+}
+
+div ul {
+    margin-left: 100px;
+}
+
+div {
+    float: left;
+}
+
+.redes ul li {
+    display: inline; 
+    line-height: 75px;   
+}
+
+h3 {
+    font-weight: lighter;
+    line-height: 75px;
+    margin-left: 400px;
+}
+
+.btn-cadastro {
+    margin-left: 50%;
+    line-height: 75px;
+}
+
+.btn-cadastro button {
+    
+    width: 200px;
+    height: 40px;
+    background: rgba(94, 72, 140, 1);
+    font-size: 20px;
+    color: rgba(242, 242, 242, 1);
+    border: 2px solid rgba(242, 242, 242, 1);;
+    cursor: pointer;
+}
+
+.btn-cadastro button:hover {
+    
+    background: rgb(123, 104, 163);
+    color: rgba(29, 1, 89, 1);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Color Theme Swatches in RGBA */
+.Azteca-Moderno-on-Adobe-Draw-w-Note-9-1-rgba { color: rgba(205, 197, 216, 1); }
+.Azteca-Moderno-on-Adobe-Draw-w-Note-9-2-rgba { color: rgba(29, 1, 89, 1); }
+.Azteca-Moderno-on-Adobe-Draw-w-Note-9-3-rgba { color: rgba(94, 72, 140, 1); }
+.Azteca-Moderno-on-Adobe-Draw-w-Note-9-4-rgba { color: rgba(132, 117, 165, 1); }
+.Azteca-Moderno-on-Adobe-Draw-w-Note-9-5-rgba { color: rgba(242, 242, 242, 1); }

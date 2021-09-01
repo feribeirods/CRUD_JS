@@ -1,0 +1,100 @@
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+ width: 300px;
+ height: 40px;
+ margin: 20px;
+ box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+ border: 2px solid white;
+}
+
+::placeholder {
+    color: rgba(94, 72, 140, 1);
+    opacity: 1;
+    font-size: 16px;
+}
+
+h2 {
+    color: rgba(242, 242, 242, 1);
+}
+
+.modal {
+    width: 700px;
+    height: 300px;
+    background: rgba(94, 72, 140, 1);
+    border: 10px solid rgba(132, 117, 165, 1);
+    box-shadow: 0px 0px 0px 10px rgba(94, 72, 140, 1);
+    position: relative;
+}
+
+.modal-titulo {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.cadastrar {
+    width: 200px;
+    height: 40px;
+    background: rgba(132, 117, 165, 1);
+    margin-left: 450px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgba(242, 242, 242, 1);
+    border: 0;
+    cursor: pointer;
+}
+
+.cadastrar:hover {
+    background: rgba(242, 242, 242, 1);
+    color: rgba(29, 1, 89, 1);
+    transition: 0.5s;
+}
+
+.fechar {
+    width: 45px;
+    height: 45px;
+    border: 10px solid rgba(132, 117, 165, 1);  
+    color: rgba(94, 72, 140, 1);
+    font-weight: bolder;  
+    background: #FFF;
+    position: absolute;
+    top: -45px;
+    right: -45px;
+    cursor: pointer;
+}
+
+.mostrar {
+    display: flex;
+}
+
+@keyframes modal {
+
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal 1s;
+}
+
+.modal-inputs {
+    float: left;
+}

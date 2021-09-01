@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Js</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<header>
+    
+    <div class="titulo-header">
+        <h1>Cadastro de Clientes</h1>
+    </div>
+
+    <div class="btn-cadastro">
+        <button onclick="iniciaModal()">Cadastrar</button>
+    </div>
+
+</header>
+
+<article>
+    <table id="tb_client">
+        <thead>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Cidade</th>
+            <th>Funções</th>
+        </thead>
+
+        <tbody>
+            
+        </tbody>
+    </table>
+</article>
+
+
+<footer>
+    <div>
+        <h3>Desenvolvido por Luiz Fernando Ribeiro dos Santos &copy; 2021</h3>
+    </div>
+    
+
+    <div class="redes">
+        <ul>
+            <li><a href="https://www.instagram.com/feribeirods/" target="_blank"> <i class="fab fa-instagram rotate"></i> Instagram</a></li> 
+            <li><a href="https://github.com/feribeirods" target="_blank"><i class="fab fa-github rotate"></i>  Github</a> </li>            
+            <li><a href="https://www.linkedin.com/in/luiz-fernando-ribeiro-dos-santos-24601a1b7/" target="_blank"><i class="fab fa-linkedin rotate"></i> Linkedin</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+<div id="modal-container" class="modal-container">
+
+    <div class="modal">
+        
+        <div class="modal-titulo">
+            <h2>Cadastrar</h2>
+        </div>
+         
+        <form class="modal-inputs">
+           
+                <input data-index="new" id="nome" type="text" placeholder="Nome" required> 
+            
+                <input id="email" type="email" placeholder="E-mail" required> 
+             
+                <input id="fone" type="text" placeholder="Telefone" required>             
+                 
+                <input id="cidade" type="text" placeholder="Cidade" required> 
+        </form> 
+
+        <div>
+            <button onclick="saveClient()" class="cadastrar">Salvar</button>
+        </div>
+
+        <button class="fechar" onclick="fechaModal()">X</button>
+
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>    
+</body>
+
+</html>
